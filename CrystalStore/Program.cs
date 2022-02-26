@@ -10,19 +10,19 @@ namespace CrystalStore
     {
         static void Main(string[] args)
         {
-            int myMoney = 100;
-            int myCrystal = 0;
+            int userMoney = 100;
+            int userCrystal = 0;
             int priceCrystal = 10;
             int countBuyCrystal;
 
             Console.Write("Введите кол-во кристаллов, которое хотели бы купить: ");
             countBuyCrystal = Convert.ToInt32(Console.ReadLine());
 
-            myMoney -= priceCrystal * countBuyCrystal;
-            myCrystal += countBuyCrystal;
+            userMoney -= priceCrystal * countBuyCrystal;
+            userCrystal += countBuyCrystal;
 
-            Console.WriteLine($"\nДеньги: {myMoney}" +
-                              $"\nКристаллы: {myCrystal}");
+            Console.WriteLine($"\nДеньги: {userMoney}" +
+                              $"\nКристаллы: {userCrystal}");
         }
     }
 }
